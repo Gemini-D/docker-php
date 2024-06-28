@@ -21,7 +21,8 @@
         "php-http/socket-client": "^2.0",
         "php-http/message": "^1.0",
         "symfony/filesystem": "^5.4 || ^6.0 || ^7.0",
-        "symfony/process": "^5.4 || ^6.0 || ^7.0"
+        "symfony/process": "^5.4 || ^6.0 || ^7.0",
+        "php-http/message-factory": "^1.1"
     },
     "replace": {
         "docker-php/docker-php": "*"

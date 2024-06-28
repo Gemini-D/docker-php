@@ -88,12 +88,12 @@ class Docker extends Client
         return $this->executePsr7Endpoint(new SystemEvents($queryParameters), $fetch);
     }
 
-    public static function create($httpClient = null)
+    public static function create($httpClient = null, array $additionalPlugins = [], array $additionalNormalizers = [])
     {
         if (null === $httpClient) {
             $httpClient = DockerClientFactory::createFromEnv();
         }
 
-        return parent::create($httpClient);
+        return parent::create($httpClient, $additionalPlugins, $additionalNormalizers);
     }
 }
